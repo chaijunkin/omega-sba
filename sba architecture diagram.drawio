@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-29T22:42:58.726Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="SRsBHn88po27VDoxbc1g" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-29T22:43:33.809Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="qqdB56fXLxMzyHaBFecf" version="20.0.3" type="github">
   <diagram id="_zcOvDsHGXR2nhW8fiFH" name="Page-1">
     <mxGraphModel dx="1564" dy="2496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -162,7 +162,7 @@
           <mxGeometry x="625.5" y="80" width="69" height="72" as="geometry" />
         </mxCell>
         <mxCell id="GHOSXLU9OCpANRJcqfyZ-87" value="RDS (main)&lt;br&gt;PostgreSQL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="GHOSXLU9OCpANRJcqfyZ-3" vertex="1">
-          <mxGeometry x="200" y="595" width="180" height="80" as="geometry" />
+          <mxGeometry x="200" y="593" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="GHOSXLU9OCpANRJcqfyZ-19" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.rds_db_instance_standby_multi_az;fillColor=#2E73B8;gradientColor=none;fontSize=24;" parent="GHOSXLU9OCpANRJcqfyZ-3" vertex="1">
           <mxGeometry x="841" y="593" width="80" height="90" as="geometry" />
