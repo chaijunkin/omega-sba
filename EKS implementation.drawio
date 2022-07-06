@@ -1,6 +1,7 @@
-<mxfile host="app.diagrams.net" modified="2022-07-06T10:25:01.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="FIU8TUrMKFb-k4ZySnLw" version="20.0.4" type="github">
+
+<mxfile host="app.diagrams.net" modified="2022-07-06T10:32:34.847Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="8QNTL2RLwVdJTSQxdj5p" version="20.0.4" type="github">
   <diagram id="LKw3yPQcZRu6g3r9BWp9" name="Page-1">
-    <mxGraphModel dx="3465" dy="2405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3020" dy="2225" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,9 +16,6 @@
         </mxCell>
         <mxCell id="uwTPj9ky21v6XsiQclm8-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;dashed=1;labelBackgroundColor=none;fillColor=none;strokeColor=#FF8000;" parent="uwTPj9ky21v6XsiQclm8-2" vertex="1">
           <mxGeometry x="90" y="120" width="560" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="uwTPj9ky21v6XsiQclm8-4" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eks;" parent="uwTPj9ky21v6XsiQclm8-2" vertex="1">
-          <mxGeometry x="90" y="120" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="uwTPj9ky21v6XsiQclm8-26" value="EKS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;labelBackgroundColor=none;fontSize=24;fontColor=#000000;" parent="uwTPj9ky21v6XsiQclm8-2" vertex="1">
           <mxGeometry x="90" y="200" width="80" height="30" as="geometry" />
