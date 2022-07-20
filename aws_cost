@@ -1,0 +1,61 @@
+[1mProject:[0m chaijunkin/terraform-omega-sba/setup/junkin
+
+ [4mName[0m                                                                                     [4mMonthly Qty[0m  [4mUnit[0m                        [4mMonthly Cost[0m 
+                                                                                                                                                
+ [1maws_cloudwatch_dashboard.main[0m                                                                                                                  
+ [2m└─[0m Dashboard                                                                                       1  months                             $3.00 
+                                                                                                                                                
+ [1maws_sns_topic.sba_sns_topic[0m                                                                                                                    
+ [2m├─[0m API requests (over 1M)                                                        Monthly cost depends on usage: $0.50 per 1M requests          
+ [2m├─[0m HTTP/HTTPS notifications (over 100k)                                          Monthly cost depends on usage: $0.06 per 100k notifications   
+ [2m├─[0m Email/Email-JSON notifications (over 1k)                                      Monthly cost depends on usage: $2.00 per 100k notifications   
+ [2m├─[0m Kinesis Firehose notifications                                                Monthly cost depends on usage: $0.29 per 1M notifications     
+ [2m├─[0m Mobile Push notifications                                                     Monthly cost depends on usage: $0.50 per 1M notifications     
+ [2m├─[0m MacOS notifications                                                           Monthly cost depends on usage: $0.50 per 1M notifications     
+ [2m└─[0m SMS notifications (over 100)                                                  Monthly cost depends on usage: $0.75 per 100 notifications    
+                                                                                                                                                
+ [1mmodule.api_module.aws_autoscaling_group.api-asg[0m                                                                                                
+ [2m└─[0m module.api_module.aws_launch_template.api-lt                                                                                                
+ [2m   └─[0m Instance usage (Linux/UNIX, on-demand, t3a.medium)                                         730  hours                             $32.56 
+                                                                                                                                                
+ [1mmodule.api_module.aws_cloudwatch_log_group.sba_api_cloudwatch_log_group[0m                                                                        
+ [2m├─[0m Data ingested                                                                 Monthly cost depends on usage: $0.67 per GB                   
+ [2m├─[0m Archival Storage                                                              Monthly cost depends on usage: $0.033 per GB                  
+ [2m└─[0m Insights queries data scanned                                                 Monthly cost depends on usage: $0.0067 per GB                 
+                                                                                                                                                
+ [1mmodule.api_module.aws_lb.api_nlb[0m                                                                                                               
+ [2m├─[0m Network load balancer                                                                         730  hours                             $18.40 
+ [2m└─[0m Load balancer capacity units                                                  Monthly cost depends on usage: $4.38 per LCU                  
+                                                                                                                                                
+ [1mmodule.bastion_module.aws_instance.vpc-bastion-ec2[0m                                                                                             
+ [2m├─[0m Instance usage (Linux/UNIX, on-demand, t3a.micro)                                             730  hours                              $8.18 
+ [2m└─[0m root_block_device                                                                                                                           
+ [2m   └─[0m Storage (general purpose SSD, gp2)                                                           8  GB                                 $0.96 
+                                                                                                                                                
+ [1mmodule.database_module.aws_db_instance.postgres[0m                                                                                                
+ [2m├─[0m Database instance (on-demand, Multi-AZ, db.t3.micro)                                          730  hours                             $35.04 
+ [2m└─[0m Storage (general purpose SSD, gp2)                                                             20  GB                                 $5.52 
+                                                                                                                                                
+ [1mmodule.react_app_module.aws_autoscaling_group.react-asg[0m                                                                                        
+ [2m└─[0m module.react_app_module.aws_launch_template.react-lt                                                                                        
+ [2m   └─[0m Instance usage (Linux/UNIX, on-demand, t3a.medium)                                         730  hours                             $32.56 
+                                                                                                                                                
+ [1mmodule.react_app_module.aws_cloudwatch_log_group.sba_react_cloudwatch_log_group[0m                                                                
+ [2m├─[0m Data ingested                                                                 Monthly cost depends on usage: $0.67 per GB                   
+ [2m├─[0m Archival Storage                                                              Monthly cost depends on usage: $0.033 per GB                  
+ [2m└─[0m Insights queries data scanned                                                 Monthly cost depends on usage: $0.0067 per GB                 
+                                                                                                                                                
+ [1mmodule.react_app_module.aws_lb.sba-alb[0m                                                                                                         
+ [2m├─[0m Application load balancer                                                                     730  hours                             $18.40 
+ [2m└─[0m Load balancer capacity units                                                  Monthly cost depends on usage: $5.84 per LCU                  
+                                                                                                                                                
+ [1mmodule.vpc_module.aws_nat_gateway.vpc-nat-gw[0m                                                                                                   
+ [2m├─[0m NAT gateway                                                                                   730  hours                             $35.04 
+ [2m└─[0m Data processed                                                                Monthly cost depends on usage: $0.048 per GB                  
+                                                                                                                                                
+[1m OVERALL TOTAL[0m                                                                                                                          $189.64 
+──────────────────────────────────
+51 cloud resources were detected:
+∙ 11 were estimated, 10 of which include usage-based costs, see [4mhttps://infracost.io/usage-file[0m
+∙ 34 were free, rerun with --show-skipped to see details
+∙ 6 are not supported yet, rerun with --show-skipped to see details

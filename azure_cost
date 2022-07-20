@@ -1,0 +1,63 @@
+[1mProject:[0m chaijunkin/terraform-omega-sba/setup/azure
+
+ [4mName[0m                                                                   [4mMonthly Qty[0m  [4mUnit[0m                      [4mMonthly Cost[0m 
+                                                                                                                            
+ [1mazurerm_application_gateway.be_appgateway[0m                                                                                  
+ [2m├─[0m Gateway usage (basic v2)                                                  1,460  hours                          $292.00 
+ [2m└─[0m V2 capacity units (basic)                                    Monthly cost depends on usage: $0.008 per CU               
+                                                                                                                            
+ [1mazurerm_application_gateway.fe_appgateway[0m                                                                                  
+ [2m├─[0m Gateway usage (basic v2)                                                  1,460  hours                          $292.00 
+ [2m└─[0m V2 capacity units (basic)                                    Monthly cost depends on usage: $0.008 per CU               
+                                                                                                                            
+ [1mazurerm_bastion_host.bastion_host[0m                                                                                          
+ [2m├─[0m Bastion host                                                                730  hours                          $138.70 
+ [2m└─[0m Outbound data transfer (first 10TB)                          Monthly cost depends on usage: $0.087 per GB               
+                                                                                                                            
+ [1mazurerm_key_vault_certificate.app_gateway_vault_certificate[0m                                                                
+ [2m├─[0m Certificate renewals                                         Monthly cost depends on usage: $3.00 per requests          
+ [2m└─[0m Certificate operations                                       Monthly cost depends on usage: $0.03 per 10K transactions  
+                                                                                                                            
+ [1mazurerm_key_vault_certificate.be_app_gateway_vault_certificate[0m                                                             
+ [2m├─[0m Certificate renewals                                         Monthly cost depends on usage: $3.00 per requests          
+ [2m└─[0m Certificate operations                                       Monthly cost depends on usage: $0.03 per 10K transactions  
+                                                                                                                            
+ [1mazurerm_linux_virtual_machine_scale_set.be_vmss[0m                                                                            
+ [2m├─[0m Instance usage (pay as you go, Standard_B2s)                              1,460  hours                           $60.74 
+ [2m└─[0m os_disk                                                                                                                 
+ [2m   ├─[0m Storage (S4)                                                               2  months                           $3.07 
+ [2m   └─[0m Disk operations                                           Monthly cost depends on usage: $0.0005 per 10k operations  
+                                                                                                                            
+ [1mazurerm_linux_virtual_machine_scale_set.fe_vmss[0m                                                                            
+ [2m├─[0m Instance usage (pay as you go, Standard_B2s)                              1,460  hours                           $60.74 
+ [2m└─[0m os_disk                                                                                                                 
+ [2m   ├─[0m Storage (S4)                                                               2  months                           $3.07 
+ [2m   └─[0m Disk operations                                           Monthly cost depends on usage: $0.0005 per 10k operations  
+                                                                                                                            
+ [1mazurerm_log_analytics_workspace.log_analytics_workspace[0m                                                                    
+ [2m├─[0m Log data ingestion                                           Monthly cost depends on usage: $2.30 per GB                
+ [2m└─[0m Log data export                                              Monthly cost depends on usage: $0.10 per GB                
+                                                                                                                            
+ [1mazurerm_postgresql_flexible_server.postgres[0m                                                                                
+ [2m├─[0m Compute (GP_Standard_D2s_v3)                                                730  hours                            $0.00 
+ [2m├─[0m Storage                                                                      32  GB                               $0.00 
+ [2m└─[0m Additional backup storage                                    Monthly cost depends on usage: $0.00 per GB                
+                                                                                                                            
+ [1mazurerm_private_dns_zone.sba_pvt_dns_zone[0m                                                                                  
+ [2m└─[0m Hosted zone                                                                   1  months                           $0.50 
+                                                                                                                            
+ [1mazurerm_public_ip.bastion_public_ip[0m                                                                                        
+ [2m└─[0m IP address (static)                                                         730  hours                            $3.65 
+                                                                                                                            
+ [1mazurerm_public_ip.be_public_ip[0m                                                                                             
+ [2m└─[0m IP address (static)                                                         730  hours                            $3.65 
+                                                                                                                            
+ [1mazurerm_public_ip.fe_public_ip[0m                                                                                             
+ [2m└─[0m IP address (static)                                                         730  hours                            $3.65 
+                                                                                                                            
+[1m OVERALL TOTAL[0m                                                                                                      $861.77 
+──────────────────────────────────
+29 cloud resources were detected:
+∙ 13 were estimated, 9 of which include usage-based costs, see [4mhttps://infracost.io/usage-file[0m
+∙ 13 were free, rerun with --show-skipped to see details
+∙ 3 are not supported yet, rerun with --show-skipped to see details
